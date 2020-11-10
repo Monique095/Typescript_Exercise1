@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <title>Exercise 1</title>
+
+    <div class="form-horizontal" id="nameform">
+        <div class="form-group">
+            <label for="forenames" class="col-sm-2 control-label">Forenames</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="forenames" size="20" placeholder="Forenames" minlength="1" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="surname" class="col-sm-2 control-label">Surname</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="surname" size="20" placeholder="Surname" minlength="2" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="nickname" class="col-sm-2 control-label">Nickname</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="nickname" size="20" placeholder="Nickname" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="emailAddress" class="col-sm-2 control-label">Email Address</label>
+            <div class="col-sm-2">
+                <input type="email" class="form-control" id="emailAddress" size="20" placeholder="Email Address" minlength="4" pattern=".@." required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-2">
+                <input type="password" class="form-control" id="password" size="20" placeholder="Password" minlength="4" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword" class="col-sm-2 control-label">Confirm Password</label>
+            <div class="col-sm-2">
+                <input type="password" class="form-control" id="confirmPassword" size="20" placeholder="Confim Password" />
+            </div>
+        </div>
+        <div>
+            <label for="terms_and_conditions">Agree to the Terms and Conditions</label>
+            <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)" />
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary" id="register" disabled>Register</button>
+                <button class="btn btn-primary" id="array">Run Array Methods</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+
+</html>
